@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafisa Islam Portfolio</title>
+    <link rel="stylesheet" href="style_home.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personalbio_aboutme.html">About Me</a></li>
+                <li><a href="personalbio_publication.html">Publications</a></li>
+                <li><a href="personalbio_research.html">Research</a></li>
+                <li><a href="personalbio_contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+                <h1 class="n-sub-title">NAFISA ISLAM</h1>
+                <br> <br>
+                <br> <br>
+                <p>Hi! I am Nafisa Islam. I study air quality dynamics with the aim of extracting valuable information that can help protect the quality of the air we breathe.</span>
+                <br> <br>
+                <br> </span>Currently, I am working as a Lecturer in the Civil and Environmental Engineering Department of IUT. I have been in the teaching profession for the last four years and in this four-year time span, I have taken versatile civil engineering courses - starting from Civil Engineering Drawing I to Environmental Modeling.  During my academic career, teaching at IUT especially has given me some unique experiences. Since it is an international university, I have come across people from different cultures and regions. I came to know about their life struggles which pushed me more to excel myself day by day. Moreover, I have met some awesome students here and had the opportunity to work closely with distinguished professors. 
+                <br> <br>
+                <br> </span>Before starting my academic career, I have worked as a Research Assistant in the Minamata Initial Assessment (MIA) Project under the supervision of Dr. Tanvir Ahmed and Dr. Mohidus Samad Khan. The purpose of the project was to develop the National Mercury Emission Profile for Bangladesh. The extent of mercury pollution in Bangladesh and its emission to three environmental phases - air, water, and land  - were determined through the analysis of this project.</span>
+                <br> <br>
+                <br> </span>I completed my B. Sc. in Civil Engineering from BUET on September 13, 2017. After that, I completed my M. Sc. in Civil Engineering (Environmental) from BUET on May 24, 2021. My B. Sc. and M. Sc. thesis aimed at investigating the meteorological influences on air quality parameters in the region over Bangladesh. The research work uncovered the spatial and temporal variation of meteorological influences on air quality within this region.  Presently, I am trying to gather expertise in air quality analysis, national inventory development for heavy metals, data analysis and interpretations. I also have interests in environmental sensing and human- computer interaction to develop user-centered design.</span></p>
+        </div>
+    </div>
+</div>
+<!---------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">            
+            <div class="about-col-2">
+                <h1 class="sub-title" >About Me</h1>
+                <p></p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Python</li> 
+                            <li>MATLAB</li>     
+                            <li>Javascript</li>                       
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July, 2021 - Present</span><br>Islamic University of Technology</li> 
+                            <li><span>March, 2021 - June, 2021</span><br>United International University</li>     
+                            <li><span>January, 2019 - February, 2021</span><br>Stamford University Bangladesh</li>
+                            <li><span>July, 2018 - December, 2018</span><br>Research Assistant, BUET</li>
+                            <li><span>January, 2018 - August, 2018</span><br>Sonargaon University</li>                       
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>October, 2017 - May, 2021</span><br>M.Sc. in Civil Engineering (Environmental) from BUET</li> 
+                            <li><span>January, 2013 - Spetember, 2017</span><br>B.Sc. in Civil Engineering from BUET</li>     
+                            <li><span>March, 2010 - April, 2012</span><br>H.S.C. from Viqarunnisa Noon School and College</li>
+                            <li><span>February, 2010</span><br>S.S.C. from Viqarunnisa Noon School and College</li>
+                                                
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+</script>
+
+</body>
+</html>

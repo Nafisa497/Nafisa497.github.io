@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafisa Islam Portfolio</title>
+    <link rel="stylesheet" href="style_aboutme.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personalbio_aboutme.html">About Me</a></li>
+                <li><a href="personalbio_publication.html">Publications</a></li>
+                <li><a href="personalbio_research.html">Research</a></li>
+                <li><a href="personalbio_contact.html">Contact</a></li>
+            </ul>
+        </nav>        
+    </div>
+</div>
+<!---------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">            
+            <div class="about-col-2">
+                
+                <p></p>
+                    
+                    <div class="tab-titles">                        
+                        <p class="tab-links active-link" onclick="opentab('pexperience')"">Professional Experience</p>
+                        <p class="tab-links" onclick="opentab('rexperience')"">Research Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Software Skills</p>
+                        <p class="tab-links" onclick="opentab('academic')"">Academic Honors</p>
+                        <p class="tab-links" onclick="opentab('education')"">Education</p>
+                    </div>                    
+                    <div class="tab-contents active-tab" id="pexperience">
+                        <ul>
+                            <li><span>Lecturer (July, 2021 - Present)</span><br>Islamic University of Technology</li> 
+                            <li><span>Lecturer (March, 2021 - June, 2021)</span><br>United International University</li>     
+                            <li><span>Lecturer (January, 2019 - February, 2021)</span><br>Stamford University Bangladesh</li>
+                            <li><span>Research Assistant (July, 2018 - December, 2018)</span><br>Bangladesh University of Engineering and Technology</li>
+                            <li><span>Lecturer (January, 2018 - August, 2018)</span><br>Sonargaon University</li>                       
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="rexperience">
+                        <ul>
+                            <li><span>Research Assistant (February, 2020 - March, 2021)</span><br>“A Practical and Real-time Crowd Management System through Simulating, Monitoring and Guiding Pedestrians”, supervised by Professor A. B. M. Alim Al Islam, Department of CSE, BUET, funded by Ministry of Education, Saudi Arabia</li> 
+                            <br>
+                            <li><span>Research Assistant (July, 2018 - December, 2018)</span><br>“Strengthening National Decision Making towards Ratification of the Minamata Convention and Build Capacity towards Implementation of Future Provisions of the People’s Republic of Bangladesh (MIA Project)”, supervised by Professor Tanvir Ahmed, Department of Civil Engineering, BUET, co-supervised by Mohidus Samad Khan, Associate Professor, Department of Chemical Engineering, BUET</li>     
+                            <br>
+                            <li><span>Research Assistant (February, 2017 - October, 2017)</span><br>“EcoRadar: Devising an Ecological Radar System for Detecting Environmental Pollution in Bangladesh”, supervised by Professor A. B. M. Alim Al Islam, Department of CSE, BUET, funded by Ministry of Education, Government of the People’s Republic of Bangladesh</li>
+                                                 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li>Pycharm Community Edition 2020.2.3</li> 
+                            <li>MATLAB</li>     
+                            <li>ArcGIS 10.5</li>
+                            <li>HTML JavaScript</li>    
+                            <li>LaTeX</li>
+                            <li>SPSS, MINITAB</li>
+                            <li>AUTOCAD</li>
+                            <li>SAP 2000 14</li>
+                            <li>ETABS</li>
+                            <li>EndNote</li>
+                            <li>VISSIM</li>
+                            <li>C++</li>
+                            <li>STAN</li>                   
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="academic">
+                        <ul>
+                            <li><span>BUET, 2017</span><br>University Merit Scholarship for achieving GPA: 4.00 in Level - 4, Term - 2</li> 
+                            <li><span>BUET, 2013 - 2017</span><br>University Stipend</li>     
+                            <li><span>Bangladesh Government, 2013</span><br>Dhaka Board scholarship (Grade: General) </li>
+                            <li><span>Bangladesh Government, 2011</span><br>Dhaka Board scholarship (Grade: General) </li>
+                            <li><span>Bangladesh Government, 2009</span><br>Dhaka Board scholarship (Grade: Talent Pool) </li>                                                 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>October, 2017 - May, 2021</span><br>M.Sc. in Civil Engineering (Environmental), Bangladesh University of Engineering and Technology</li> 
+                            <li><span>January, 2013 - Spetember, 2017</span><br>B.Sc. in Civil Engineering, Bangladesh University of Engineering and Technology</li> 
+                            <li><span>March, 2010 - April, 2012</span><br>H.S.C., Viqarunnisa Noon School and College, Dhaka, Bangladesh</li>
+                            <li><span>February, 2010</span><br>S.S.C.,Viqarunnisa Noon School and College, Dhaka, Bangladesh</li>                                                  
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+</script>
+
+</body>
+</html>
